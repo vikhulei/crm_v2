@@ -1,0 +1,1 @@
+This is simple contact management application with authentication, viewing, creating, editing and deliting options
