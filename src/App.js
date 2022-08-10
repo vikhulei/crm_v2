@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { Wrapper, BackgroundColor, BackgroundImage, NavBar, Title, Logo} from "./AppStyle"
 import background from "./assets/background.jpg"
 import logo from "./assets/logo.png"
-import Login from "./components/large/login/Login"
-import Profile from "./components/large/profile/Profile"
+import Login from "./components/login/Login"
+import Profile from "./components/profile/Profile"
 import Protected from "./util/Protected"
 
 function App() {

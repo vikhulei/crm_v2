@@ -11,7 +11,12 @@ position: absolute;
 top: 80px;
 bottom: 0;
 width: 100%;
+height: 500px;
+min-height: calc(100vh - 80px);
 background-color: #BD9CE8;
+// @media screen and (max-width: 750px) {
+//     height: 300vh;
+// }
 `
 
 const BackgroundImage = styled.img `
@@ -30,14 +35,14 @@ background-color: #F5EAFB;
 
 const Title = styled.h1 `
     font-family: "Rock Salt";
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: #450577;
     text-align: center;
     line-height: 1.7;
 `
 const Logo = styled.img `
     position: absolute;
-    width: 80px;
+    width: 60px;
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
