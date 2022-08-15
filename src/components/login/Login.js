@@ -1,5 +1,5 @@
 import {useState} from "react"
-import { DataboxNav, SmallButton, RedText } from "../elements/Elements"
+import { DataboxNav, SmallButton, RedText } from "../styled_components/StyledComponents"
 import { DataBoxLogin, FormLogin, LabelLogin, InputLogin, RedTextLogin, Visibility} from "./LoginStyle"
 
 const Login = () => {

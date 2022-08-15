@@ -1,6 +1,6 @@
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styled from "styled-components"
-import {Databox, Label, Input, RedText } from "../elements/Elements"
+import {Databox, Label, Input, RedText } from "../styled_components/StyledComponents"
 
 
 const DataBoxLogin = styled(Databox) `
