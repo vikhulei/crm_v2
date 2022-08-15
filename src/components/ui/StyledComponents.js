@@ -1,21 +1,22 @@
 import styled from "styled-components"
 
-const Wrapper = styled.div `
-    position: absolute;
-    max-width: 95%;
-    width: 1200px;;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // @media screen and (max-width: 750px) {
-    //     flex-direction: column;
-    //     min-height: 90%;
-    // }
-    `
+// const Wrapper = styled.div `
+//     position: absolute;
+//     max-width: 95%;
+//     width: 1200px;;
+//     min-height: 100%;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     // @media screen and (max-width: 750px) {
+//     //     flex-direction: column;
+//     //     min-height: 90%;
+//     // }
+//     `
+
 const Form = styled.form `
 position: absolute;
 top: 50%;
@@ -58,8 +59,8 @@ const RedText = styled.p `
     font-weight: 600;
 `
 
-const Databox = styled.div `
-    position: absolute;
+const DataBox = styled.div `
+    position: relative;
     width: 350px;
     height: 600px;
     background-color: #DECDE5;
@@ -68,8 +69,8 @@ const Databox = styled.div `
     box-shadow: black 0px 0px 30px;
 `
 
-const DataboxNav = styled.div `
-    position: absolute;
+const DataBoxNav = styled.div `
+    position: relative;
     width: 100%;
     height: 60px;
     border: black 1px solid;
@@ -82,4 +83,4 @@ const DataboxNav = styled.div `
     font-size: 2rem;
 `
 
-export {Wrapper, Form, Input, Label, SmallButton, LargeButton, RedText, Databox, DataboxNav}
+export {Form, Input, Label, SmallButton, LargeButton, RedText, DataBox, DataBoxNav}

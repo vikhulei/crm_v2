@@ -1,9 +1,9 @@
 import NavBar from "./navbar/NavBar";
-import {Wrapper, BackgroundColor, BackgroundImage} from "./HomeStyle"
+import {Wrapper, BackgroundColor, BackgroundImage} from "./BackgroundStyle"
 import background from "../../assets/background.jpg"
 
 
-const Home = () => {
+const Background = () => {
   return (
     <Wrapper>
     <NavBar/>
@@ -14,4 +14,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Background;

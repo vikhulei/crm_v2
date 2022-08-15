@@ -1,12 +1,12 @@
 import {useState} from "react"
-import { DataboxNav, SmallButton, RedText } from "../styled_components/StyledComponents"
+import { DataBoxNav, SmallButton, RedText } from "../../components/ui/StyledComponents"
 import { DataBoxLogin, FormLogin, LabelLogin, InputLogin, RedTextLogin, Visibility} from "./LoginStyle"
 
 const Login = () => {
     const [visibility, setVisibility] = useState(false)
     return (
         <DataBoxLogin>
-            <DataboxNav>Log In</DataboxNav>
+            <DataBoxNav>Log In</DataBoxNav>
             <FormLogin autoComplete="off">
                 <LabelLogin htmlFor="username">Username:
                     <InputLogin type="text" id="username" />

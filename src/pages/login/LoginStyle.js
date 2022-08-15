@@ -1,9 +1,10 @@
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styled from "styled-components"
-import {Databox, Label, Input, RedText } from "../styled_components/StyledComponents"
+import {DataBox, Label, Input, RedText } from "../../components/ui/StyledComponents"
 
 
-const DataBoxLogin = styled(Databox) `
+const DataBoxLogin = styled(DataBox) `
+position: absolute;
 top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
