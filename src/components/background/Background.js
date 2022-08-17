@@ -5,12 +5,14 @@ import background from "../../assets/background.jpg"
 
 const Background = () => {
   return (
-    <Wrapper>
+    <>
     <NavBar/>
+    <Wrapper>
     <BackgroundColor>
         <BackgroundImage src={background} alt="background image" />
     </BackgroundColor>
     </Wrapper>
+    </>
   );
 }
 

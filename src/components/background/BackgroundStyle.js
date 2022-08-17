@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div `
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100vw;
     height: 100vh;
 `
@@ -14,15 +15,20 @@ width: 100%;
 height: 500px;
 min-height: calc(100vh - 80px);
 background-color: #BD9CE8;
-// @media screen and (max-width: 750px) {
-//     height: 300vh;
-// }
+overflow: hidden;
+@media screen and (max-width: 1450px) {
+    height: 1750px;
+}
+@media screen and (max-width: 1050px) {
+    height: 2200px;
+}
 `
 
 const BackgroundImage = styled.img `
 position: absolute;
-height: 100%;
-width: 100%;
+width: 100vw;
+min-width: 2000px;
+height: 1300px;
 object-fit: cover;
 opacity: 0.4;
 `

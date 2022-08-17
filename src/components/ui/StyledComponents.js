@@ -1,22 +1,5 @@
 import styled from "styled-components"
 
-// const Wrapper = styled.div `
-//     position: absolute;
-//     max-width: 95%;
-//     width: 1200px;;
-//     min-height: 100%;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     // @media screen and (max-width: 750px) {
-//     //     flex-direction: column;
-//     //     min-height: 90%;
-//     // }
-//     `
-
 const Form = styled.form `
 position: absolute;
 top: 50%;
@@ -47,11 +30,19 @@ const SmallButton = styled.button `
     background-color: #450577;
     border: black 1px solid;
     border-radius: 5px;
-    box-shadow: black 0px 0px 8px;
+    // box-shadow: black 0px 0px 8px;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        transform: translate(3px, 3px);
+    }
 `
 
 const LargeButton = styled(SmallButton) `
-
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
 `
 
 const RedText = styled.p `
@@ -61,12 +52,13 @@ const RedText = styled.p `
 
 const DataBox = styled.div `
     position: relative;
-    width: 350px;
+    width: 100vw;
+    max-width: 350px;
     height: 600px;
     background-color: #DECDE5;
     border: black 1px solid;
     border-radius: 20px;
-    box-shadow: black 0px 0px 30px;
+    // box-shadow: black 0px 0px 30px;
 `
 
 const DataBoxNav = styled.div `

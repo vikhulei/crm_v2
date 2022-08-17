@@ -8,7 +8,7 @@ position: absolute;
 top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
-width: 500px;
+min-width: 400px;
 height: 350px;
 `
 const FormLogin = styled.form `
@@ -16,7 +16,7 @@ const FormLogin = styled.form `
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 80%;
     text-align: center;
 
 `

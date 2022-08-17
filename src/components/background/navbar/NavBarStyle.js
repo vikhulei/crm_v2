@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
-const NavBarWrapper = styled.nav `
-position: relative;
+const NavBarWrapper = styled.div `
+position: fixed;
 width: 100%;
 height: 80px;
 background-color: #F5EAFB;
+z-index: 99;
 `
 
 const Title = styled.h1 `
