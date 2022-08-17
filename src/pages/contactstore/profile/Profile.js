@@ -30,7 +30,7 @@ const Profile = () => {
         <ErrorImageInfo>Errror accesing data</ErrorImageInfo>
         <InfoWrapper>
           <InfoLabel>First Name:</InfoLabel>
-          <InfoData>Doctorrr</InfoData>
+          <InfoData>Doctor</InfoData>
           <InfoLabel>Last Name:</InfoLabel>
           <InfoData>Who</InfoData>
           <InfoLabel>Email:</InfoLabel>
