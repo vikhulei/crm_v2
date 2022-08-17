@@ -1,6 +1,5 @@
-import VisibilityIcon from '@mui/icons-material/Visibility';
 import styled from "styled-components"
-import {DataBox, Label, Input, RedText } from "../../components/ui/StyledComponents"
+import {DataBox, Label, Input, ErrorText } from "../../components/ui/StyledComponents"
 
 
 const DataBoxLogin = styled(DataBox) `
@@ -34,14 +33,8 @@ const InputLogin = styled(Input) `
     max-width: 200px;
 `
 
-const RedTextLogin = styled(RedText) `
+const ErrorTextLogin = styled(ErrorText) `
     margin: 30px 0 25px;
 `
-const Visibility = styled(VisibilityIcon) `
-position: absolute;
-right: 10px;
-opacity: 0.7;
-transform: scale(0.8);
-`
 
-export {DataBoxLogin, FormLogin, LabelLogin, InputLogin, RedTextLogin, Visibility}
+export {DataBoxLogin, FormLogin, LabelLogin, InputLogin, ErrorTextLogin}

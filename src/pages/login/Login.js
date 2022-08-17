@@ -1,6 +1,6 @@
 import {useState} from "react"
-import { DataBoxNav, SmallButton, RedText } from "../../components/ui/StyledComponents"
-import { DataBoxLogin, FormLogin, LabelLogin, InputLogin, RedTextLogin, Visibility} from "./LoginStyle"
+import { DataBoxNav, SmallButton, Visibility } from "../../components/ui/StyledComponents"
+import { DataBoxLogin, FormLogin, LabelLogin, InputLogin, ErrorTextLogin} from "./LoginStyle"
 
 const Login = () => {
     const [visibility, setVisibility] = useState(false)
@@ -15,7 +15,7 @@ const Login = () => {
                     <InputLogin type={visibility ? "text" : "password"} id="login" />
                     <Visibility onClick={(() => setVisibility(!visibility))}/>
                 </LabelLogin>
-                <RedTextLogin>Your username or password is not correct</RedTextLogin>
+                <ErrorTextLogin>Your username or password is not correct</ErrorTextLogin>
                 <SmallButton>Sign In</SmallButton>
             </FormLogin>
         </DataBoxLogin>

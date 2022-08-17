@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 const Form = styled.form `
 position: absolute;
@@ -45,7 +46,7 @@ const LargeButton = styled(SmallButton) `
     font-size: 1.2rem;
 `
 
-const RedText = styled.p `
+const ErrorText = styled.p `
     color: #B70606;
     font-size: min(1rem, 4.5vw);
     font-weight: bold;
@@ -75,5 +76,11 @@ const DataBoxNav = styled.div `
     line-height: 1.5;
     font-size: 2rem;
 `
+const Visibility = styled(VisibilityIcon) `
+position: absolute;
+right: 10px;
+opacity: 0.7;
+transform: scale(0.8);
+`
 
-export {Form, Input, Label, SmallButton, LargeButton, RedText, DataBox, DataBoxNav}
+export {Form, Input, Label, SmallButton, LargeButton, ErrorText, DataBox, DataBoxNav, Visibility}
