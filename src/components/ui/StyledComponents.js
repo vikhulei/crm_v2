@@ -16,7 +16,7 @@ width: 50%;
 
 const Input = styled.input `
     height: 25px;
-    width: 150px;
+    // max-width: 150px;
     padding-left: 5px;
     background-color: #F2E0FB;
     border: black 1px solid;
@@ -47,12 +47,13 @@ const LargeButton = styled(SmallButton) `
 
 const RedText = styled.p `
     color: #B70606;
-    font-weight: 600;
+    font-size: min(1rem, 4.5vw);
+    font-weight: bold;
 `
 
 const DataBox = styled.div `
     position: relative;
-    width: 100vw;
+    width: 90vw;
     max-width: 350px;
     height: 600px;
     background-color: #DECDE5;

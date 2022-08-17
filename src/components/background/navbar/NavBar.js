@@ -1,4 +1,4 @@
-import {NavBarWrapper, Title, Logo} from "./NavBarStyle"
+import {NavBarWrapper, Title, Logo, SignOut} from "./NavBarStyle"
 import logo from "../../../assets/logo.png"
 
 const NavBar = () => {
@@ -6,6 +6,7 @@ const NavBar = () => {
         <NavBarWrapper>
             <Logo src={logo} alt="logo" />
             <Title>Contact Store</Title>
+            <SignOut href="#">Sign Out</SignOut>
         </NavBarWrapper>
     )
 }

@@ -4,32 +4,34 @@ import {DataBox, Label, Input, RedText } from "../../components/ui/StyledCompone
 
 
 const DataBoxLogin = styled(DataBox) `
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-min-width: 400px;
-height: 350px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    height: 350px;
 `
 const FormLogin = styled.form `
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 85%;
     text-align: center;
 
 `
 
 const LabelLogin = styled(Label) `
-    position: relative;
+    // position: relative;
     width: 100%;
     margin-bottom: 10px;
+    font-size: min(1.2rem, 4.5vw);
 `
 
 const InputLogin = styled(Input) `
     postion: absolute;
-    width: 200px;
+    width: 50vw;
+    max-width: 200px;
 `
 
 const RedTextLogin = styled(RedText) `
@@ -39,6 +41,7 @@ const Visibility = styled(VisibilityIcon) `
 position: absolute;
 right: 10px;
 opacity: 0.7;
+transform: scale(0.8);
 `
 
 export {DataBoxLogin, FormLogin, LabelLogin, InputLogin, RedTextLogin, Visibility}

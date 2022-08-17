@@ -1,3 +1,4 @@
+import "./App.css"
 import { useState } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Background from "./components/background/Background"
@@ -12,7 +13,7 @@ const App = () => {
       <Background/>
       <Router>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route element={<Protected auth={auth} />}>
             <Route path="/contactstore" element={<ContactStore />} />
           </Route>
