@@ -1,15 +1,13 @@
 import {DataBox, DataBoxNav} from "../../../components/ui/StyledComponents"
 
-const ContactList = () => {
+const ContactDetails = () => {
     return (
         <>
             <DataBox>
-                <DataBoxNav>
-
-                </DataBoxNav>
+                <DataBoxNav>Select Contact</DataBoxNav>
             </DataBox>
         </>
     )
 }
 
-export default ContactList
+export default ContactDetails

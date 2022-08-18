@@ -1,4 +1,4 @@
-import { DataBox } from "../../../components/ui/StyledComponents";
+import { DataBox, Label, Input, SmallButton, ErrorText, Visibility } from "../../../components/ui/StyledComponents";
 import {
   DataBoxNavProfile,
   ImageWrapper,
@@ -12,7 +12,8 @@ import {
   InfoData,
   PasswordForm,
   Fieldset,
-  Legend
+  Legend,
+  InputsGroup
 } from "./ProfileStyle";
 import camberbech from "../../../assets/camberbech.jpg";
 
@@ -41,6 +42,22 @@ const Profile = () => {
         <PasswordForm>
           <Fieldset>
             <Legend>Change Password</Legend>
+            <InputsGroup>
+            <Label> Current password:
+                <Input type="password"/>
+                <Visibility/>
+            </Label>
+            <Label> New password:
+                <Input type="password"/>
+                <Visibility/>
+            </Label>
+            <Label> Retype new password:
+                <Input type="password"/>
+                <Visibility/>
+            </Label>
+            </InputsGroup>
+            <ErrorText>New password does not meet the requirements</ErrorText>
+            <SmallButton>Change</SmallButton>
           </Fieldset>
         </PasswordForm>
       </DataBox>

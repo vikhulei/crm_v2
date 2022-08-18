@@ -12,7 +12,10 @@ width: 100%;
 const Label = styled.label `
 display: flex;
 justify-content: space-between;
-width: 50%;
+align-items: center;
+width: 100%;
+font-size: 0.8rem;
+font-weight: bold;
 `
 
 const Input = styled.input `
@@ -48,7 +51,7 @@ const LargeButton = styled(SmallButton) `
 
 const ErrorText = styled.p `
     color: #B70606;
-    font-size: min(1rem, 4.5vw);
+    font-size: min(0.8rem, 4.5vw);
     font-weight: bold;
 `
 
@@ -78,7 +81,7 @@ const DataBoxNav = styled.div `
 `
 const Visibility = styled(VisibilityIcon) `
 position: absolute;
-right: 10px;
+right: 15px;
 opacity: 0.7;
 transform: scale(0.8);
 `

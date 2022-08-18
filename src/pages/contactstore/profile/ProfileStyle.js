@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {DataBoxNav, ErrorText} from "../../../components/ui/StyledComponents"
+import {DataBoxNav, ErrorText, SmallButton} from "../../../components/ui/StyledComponents"
 
 
 const DataBoxNavProfile = styled(DataBoxNav) `
@@ -34,6 +34,7 @@ const InputImage = styled.input `
         }
       }
     opacity: 0;
+    z-index: 99;
 `
 const Image = styled.img `
     position: absolute;
@@ -43,8 +44,6 @@ const Image = styled.img `
 `
 const ErrorImageText = styled(ErrorText) `
     position: absolute;
-    font-size: 0.7rem;
-    font-weight: 600;
     top: 190px;
     right: 5px;
 `
@@ -89,6 +88,11 @@ const Fieldset = styled.fieldset `
       background-color: #D5C2DE;
       border: black solid 1px;
       border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 3% 0;
 `
 
 const Legend = styled.legend `
@@ -96,5 +100,19 @@ const Legend = styled.legend `
       margin-left: 20px;
       padding: 0 5px;
 `
+const InputsGroup = styled.div `
+    //   position: absolute;
+      width: 100%;
+      height: 35%;
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+`
 
-export {DataBoxNavProfile, ImageWrapper, InputImage, Image, TopImageText, ErrorImageText, ErrorImageInfo, InfoWrapper, InfoLabel, InfoData, PasswordForm, Fieldset, Legend}
+const ChangeButton = styled(SmallButton) `
+      position: absolute;
+
+`
+
+export {DataBoxNavProfile, ImageWrapper, InputImage, Image, TopImageText, ErrorImageText, ErrorImageInfo, InfoWrapper, InfoLabel, InfoData, PasswordForm, Fieldset, Legend, InputsGroup}
