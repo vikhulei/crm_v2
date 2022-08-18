@@ -110,9 +110,4 @@ const InputsGroup = styled.div `
       justify-content: space-between;
 `
 
-const ChangeButton = styled(SmallButton) `
-      position: absolute;
-
-`
-
 export {DataBoxNavProfile, ImageWrapper, InputImage, Image, TopImageText, ErrorImageText, ErrorImageInfo, InfoWrapper, InfoLabel, InfoData, PasswordForm, Fieldset, Legend, InputsGroup}

@@ -1,12 +1,19 @@
+import {useState} from "react"
 import { DataBox, DataBoxNav } from "../../../components/ui/StyledComponents";
 import {
   DataWrapper,
   SearchField,
   SelectWrapper,
-  SelectList
+  SelectList,
+  Option
 } from "./ContactListStyle";
 
 const ContactDetails = () => {
+  const [backgroundColor, setBackgroundColor]= useState(false)
+  const changeOptionColor = () => {
+    setBackgroundColor(!backgroundColor)
+  }
+
   return (
     <>
       <DataBox>
@@ -14,14 +21,37 @@ const ContactDetails = () => {
         <DataWrapper>
           <SearchField type="text" placeholder="type your text" />
           <SelectWrapper>
-            <SelectList size="6">
-              <option>Contact1</option>
-              <option>Contact2</option>
-              <option>Contact3</option>
-              <option>Contact4</option>
-              <option>Contact5</option>
-              <option>Contact6</option>
-              <option>Contact7</option>
+            <SelectList size="4">
+              <Option>Contact1</Option> 
+              <Option>Contact2</Option>
+              <Option>Contact3</Option>
+              <Option>Contact4</Option>
+              <Option>Contact5</Option>
+              <Option>Contact6</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact7</Option>
+              <Option>Contact25</Option>
             </SelectList>
           </SelectWrapper>
         </DataWrapper>
