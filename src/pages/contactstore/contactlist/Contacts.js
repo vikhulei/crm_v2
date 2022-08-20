@@ -78,3 +78,5 @@ const Contacts = [
     primaryEmailAddress: "6@email.com"
   }
 ];
+
+export default Contacts

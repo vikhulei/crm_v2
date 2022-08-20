@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { Input } from "../../../components/ui/StyledComponents";
 
-const DataWrapper = styled.form`
+const DataWrapper = styled.form `
   position: relative;
-  top: 3%;
+  margin-top: 3%;
   width: 90%;
-  height: 80%;
+  height: 70%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -13,44 +13,23 @@ const DataWrapper = styled.form`
 //   justify-content: space-between;
 `;
 
-const SearchField = styled(Input)`
+const SearchField = styled(Input) `
   width: 100%;
 `;
 
-const SelectWrapper = styled.div`
+const SelectList = styled.div `
   position: relative;
-  top: 5%;
+  margin-top: 5%;
   width: 100%;
-  height: 90%;
-//   overflow-y: scroll;
-//   scrollbar-color: red blue;
-//   background-color: #F2E0FB;
-`;
-
-const SelectList = styled.select`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-  &:focus {
-    outline: none;
-  }
-  &:focus option:checked {
-    background: linear-gradient(0deg, #d29dfb 0%, #b153f9 100%);
-  }
-  border: none;
+  height: 70%;
+  border: 1px grey solid;
+  border-radius: 5px;
+  box-shadow: gray 0px 5px 5px;
   background-color: #F2E0FB;
   overflow-y: auto;
 
-  &:hover {
-      &::-webkit-scrollbar {
-          width: 10px;
-    }
-  }
-
   &::-webkit-scrollbar {
-    width: 5px;
-    transition: width 5s;
+    width: 15px;
   }
 
   &::-webkit-scrollbar-track {
@@ -63,15 +42,34 @@ const SelectList = styled.select`
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
-
+`
+const OptiontWrapper = styled.div `
+  position: relative;
+  width: 100%;
 `;
 
-const Option = styled.option`
-    border-bottom: 1px grey solid;
-    height: 20px;
-    &:checked {
-      background-color: transparent;
-    }
+const OptionLabel = styled.label `
+height: 7px;
+font-size: 0.9rem;
+padding: 10px 0;
+display: flex;
+align-items: center;
+border-bottom: 2px grey solid;
 `
 
-export { DataWrapper, SearchField, SelectWrapper, SelectList, Option };
+const OptionButton = styled.input `
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  &:checked + ${OptionLabel} {
+    background-color: #d29dfb;
+  }
+`
+
+
+export { DataWrapper, SearchField, SelectList, OptiontWrapper, OptionLabel, OptionButton };
+
+// &:checked + ${OptionLabel} {
+//   background-color: red;
+// }

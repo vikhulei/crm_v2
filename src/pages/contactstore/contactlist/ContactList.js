@@ -1,18 +1,39 @@
-import {useState} from "react"
-import { DataBox, DataBoxNav } from "../../../components/ui/StyledComponents";
+import React, { useState, useEffect, useRef } from "react"
+import { DataBox, DataBoxNav, LargeButton } from "../../../components/ui/StyledComponents";
 import {
   DataWrapper,
   SearchField,
-  SelectWrapper,
   SelectList,
-  Option
+  OptionLabel,
+  OptionButton,
+  OptiontWrapper
 } from "./ContactListStyle";
+import Contacts from "./Contacts"
 
 const ContactDetails = () => {
-  const [backgroundColor, setBackgroundColor]= useState(false)
-  const changeOptionColor = () => {
-    setBackgroundColor(!backgroundColor)
+
+  const [optionValue, setOptionValue] = useState(false)
+  const [cancelled, setCancelled] = useState(false)
+  const selectRef = useRef()
+
+  const changeValue = (e) => {
+    setOptionValue(e.target.checked)
+    console.log("target", e.target.checked)
+    console.log("optionvalue", optionValue)
   }
+
+  const cancelButton = (e) => {
+    e.preventDefault()
+    setOptionValue(false)
+    selectRef.current.focus()
+    console.log("target", e.target.checked)
+    console.log("optionvalue", optionValue)
+    // setOptionValue(true)
+  }
+
+useEffect (() => {
+  selectRef.current.focus()
+}, [optionValue])
 
   return (
     <>
@@ -20,40 +41,24 @@ const ContactDetails = () => {
         <DataBoxNav>Select Contact</DataBoxNav>
         <DataWrapper>
           <SearchField type="text" placeholder="type your text" />
-          <SelectWrapper>
-            <SelectList size="4">
-              <Option>Contact1</Option> 
-              <Option>Contact2</Option>
-              <Option>Contact3</Option>
-              <Option>Contact4</Option>
-              <Option>Contact5</Option>
-              <Option>Contact6</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact7</Option>
-              <Option>Contact25</Option>
+            <SelectList>
+              {Contacts.map((val, ind) => {
+                return <OptiontWrapper key={ind}
+                >
+                <OptionButton type="radio" 
+                name="contacts" id={val.id}
+                checked={optionValue}
+                onChange={changeValue}
+                // onClick={changeValue}
+                ref={selectRef}
+                 />
+                <OptionLabel>
+                    {val.contactName}
+                  </OptionLabel>
+                  </OptiontWrapper>
+              })}
             </SelectList>
-          </SelectWrapper>
+            <LargeButton onClick={cancelButton}>Cancel</LargeButton>
         </DataWrapper>
       </DataBox>
     </>
