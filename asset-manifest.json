@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0ff2270.css",
-    "main.js": "/static/js/main.e49b8b4c.js",
-    "static/media/background.jpg": "/static/media/background.7202138a3d2c81e2697b.jpg",
-    "static/media/logo.png": "/static/media/logo.1814c4f6800d43ea051a.png",
-    "static/media/camberbech.jpg": "/static/media/camberbech.661891228049e16ffad7.jpg",
-    "index.html": "/index.html",
-    "main.e0ff2270.css.map": "/static/css/main.e0ff2270.css.map",
-    "main.e49b8b4c.js.map": "/static/js/main.e49b8b4c.js.map"
+    "main.css": "/crm_v3/static/css/main.e0ff2270.css",
+    "main.js": "/crm_v3/static/js/main.38876349.js",
+    "static/media/background.jpg": "/crm_v3/static/media/background.7202138a3d2c81e2697b.jpg",
+    "static/media/logo.png": "/crm_v3/static/media/logo.1814c4f6800d43ea051a.png",
+    "static/media/camberbech.jpg": "/crm_v3/static/media/camberbech.661891228049e16ffad7.jpg",
+    "index.html": "/crm_v3/index.html",
+    "main.e0ff2270.css.map": "/crm_v3/static/css/main.e0ff2270.css.map",
+    "main.38876349.js.map": "/crm_v3/static/js/main.38876349.js.map"
   },
   "entrypoints": [
     "static/css/main.e0ff2270.css",
-    "static/js/main.e49b8b4c.js"
+    "static/js/main.38876349.js"
   ]
 }
